@@ -47,6 +47,7 @@ SECONDS=0
 # set paths needed for installation and check for conda installation
 install_dir=$(pwd)
 echo -e "Installation directory is: ${install_dir}"
+echo -e "Directory contains: $(ls -all)"
 
 CONDA_BASE=$(conda info --base 2>/dev/null) || { echo -e "Error: conda is not installed or cannot be initialised."; exit 1; }
 echo -e "Conda is installed at: $CONDA_BASE"
